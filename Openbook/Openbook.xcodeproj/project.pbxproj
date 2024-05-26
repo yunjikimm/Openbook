@@ -1,0 +1,666 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		DC1476552C00FE7200FEA330 /* FetchSubjectsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476542C00FE7200FEA330 /* FetchSubjectsUseCase.swift */; };
+		DC1476572C00FE8600FEA330 /* FetchQuestionsUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476562C00FE8600FEA330 /* FetchQuestionsUseCase.swift */; };
+		DC1476592C00FE9900FEA330 /* FetchRandomQuestionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476582C00FE9900FEA330 /* FetchRandomQuestionUseCase.swift */; };
+		DC14765F2C01021000FEA330 /* SubjectsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14765E2C01021000FEA330 /* SubjectsRepository.swift */; };
+		DC1476612C01021C00FEA330 /* QuestionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476602C01021C00FEA330 /* QuestionsRepository.swift */; };
+		DC1476632C01022C00FEA330 /* RandomQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476622C01022C00FEA330 /* RandomQuestionRepository.swift */; };
+		DC1476652C0102C100FEA330 /* DefaultSubjectsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476642C0102C100FEA330 /* DefaultSubjectsRepository.swift */; };
+		DC1476672C0102D900FEA330 /* DefaultQuestionsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476662C0102D900FEA330 /* DefaultQuestionsRepository.swift */; };
+		DC1476692C0102F100FEA330 /* DefaultRandomQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476682C0102F100FEA330 /* DefaultRandomQuestionRepository.swift */; };
+		DC14766B2C01035400FEA330 /* SubjectListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14766A2C01035400FEA330 /* SubjectListViewModel.swift */; };
+		DC14766D2C01036500FEA330 /* QuestionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC14766C2C01036500FEA330 /* QuestionListViewModel.swift */; };
+		DC1476712C013F7500FEA330 /* RandomQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476702C013F7500FEA330 /* RandomQuestionView.swift */; };
+		DC1476732C013F8600FEA330 /* RandomQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476722C013F8600FEA330 /* RandomQuestionViewModel.swift */; };
+		DC1476752C03CE6A00FEA330 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1476742C03CE6A00FEA330 /* Launch Screen.storyboard */; };
+		DCBFD0A82BF4FD590089EF2C /* OpenbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0A72BF4FD590089EF2C /* OpenbookApp.swift */; };
+		DCBFD0AA2BF4FD590089EF2C /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0A92BF4FD590089EF2C /* SubjectView.swift */; };
+		DCBFD0AC2BF4FD5B0089EF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBFD0AB2BF4FD5B0089EF2C /* Assets.xcassets */; };
+		DCBFD0AF2BF4FD5B0089EF2C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBFD0AE2BF4FD5B0089EF2C /* Preview Assets.xcassets */; };
+		DCBFD0B92BF4FFCC0089EF2C /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DCBFD0B82BF4FFCC0089EF2C /* FirebaseFirestore */; };
+		DCBFD0BB2BF4FFCC0089EF2C /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = DCBFD0BA2BF4FFCC0089EF2C /* FirebaseFirestoreSwift */; };
+		DCBFD0BD2BF5160B0089EF2C /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0BC2BF5160B0089EF2C /* Subject.swift */; };
+		DCBFD0BF2BF5176A0089EF2C /* FirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0BE2BF5176A0089EF2C /* FirebaseDataSource.swift */; };
+		DCBFD0C12BF51C790089EF2C /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0C02BF51C790089EF2C /* Question.swift */; };
+		DCBFD0C72BF644BE0089EF2C /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCBFD0C62BF644BE0089EF2C /* GoogleService-Info.plist */; };
+		DCBFD0C92BF8E77D0089EF2C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0C82BF8E77D0089EF2C /* QuestionListView.swift */; };
+		DCBFD0CB2BF8F6690089EF2C /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0CA2BF8F6690089EF2C /* QuestionDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		DC1476542C00FE7200FEA330 /* FetchSubjectsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSubjectsUseCase.swift; sourceTree = "<group>"; };
+		DC1476562C00FE8600FEA330 /* FetchQuestionsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchQuestionsUseCase.swift; sourceTree = "<group>"; };
+		DC1476582C00FE9900FEA330 /* FetchRandomQuestionUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRandomQuestionUseCase.swift; sourceTree = "<group>"; };
+		DC14765E2C01021000FEA330 /* SubjectsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectsRepository.swift; sourceTree = "<group>"; };
+		DC1476602C01021C00FEA330 /* QuestionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsRepository.swift; sourceTree = "<group>"; };
+		DC1476622C01022C00FEA330 /* RandomQuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionRepository.swift; sourceTree = "<group>"; };
+		DC1476642C0102C100FEA330 /* DefaultSubjectsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultSubjectsRepository.swift; sourceTree = "<group>"; };
+		DC1476662C0102D900FEA330 /* DefaultQuestionsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultQuestionsRepository.swift; sourceTree = "<group>"; };
+		DC1476682C0102F100FEA330 /* DefaultRandomQuestionRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRandomQuestionRepository.swift; sourceTree = "<group>"; };
+		DC14766A2C01035400FEA330 /* SubjectListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectListViewModel.swift; sourceTree = "<group>"; };
+		DC14766C2C01036500FEA330 /* QuestionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListViewModel.swift; sourceTree = "<group>"; };
+		DC1476702C013F7500FEA330 /* RandomQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionView.swift; sourceTree = "<group>"; };
+		DC1476722C013F8600FEA330 /* RandomQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionViewModel.swift; sourceTree = "<group>"; };
+		DC1476742C03CE6A00FEA330 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DCBFD0A42BF4FD590089EF2C /* Openbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Openbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DCBFD0A72BF4FD590089EF2C /* OpenbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenbookApp.swift; sourceTree = "<group>"; };
+		DCBFD0A92BF4FD590089EF2C /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
+		DCBFD0AB2BF4FD5B0089EF2C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DCBFD0AE2BF4FD5B0089EF2C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		DCBFD0BC2BF5160B0089EF2C /* Subject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Subject.swift; sourceTree = "<group>"; };
+		DCBFD0BE2BF5176A0089EF2C /* FirebaseDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseDataSource.swift; sourceTree = "<group>"; };
+		DCBFD0C02BF51C790089EF2C /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		DCBFD0C62BF644BE0089EF2C /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		DCBFD0C82BF8E77D0089EF2C /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
+		DCBFD0CA2BF8F6690089EF2C /* QuestionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DCBFD0A12BF4FD590089EF2C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBFD0B92BF4FFCC0089EF2C /* FirebaseFirestore in Frameworks */,
+				DCBFD0BB2BF4FFCC0089EF2C /* FirebaseFirestoreSwift in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		DC14763C2BFFACA300FEA330 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0A72BF4FD590089EF2C /* OpenbookApp.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		DC14763D2BFFACBC00FEA330 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476422BFFAE4500FEA330 /* Entities */,
+				DC1476412BFFAE3F00FEA330 /* UseCases */,
+				DC1476402BFFAE3500FEA330 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		DC14763E2BFFACC800FEA330 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476432BFFAE4D00FEA330 /* Subject */,
+				DC14764D2BFFAF6F00FEA330 /* Question */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		DC14763F2BFFACD700FEA330 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476482BFFAE8200FEA330 /* Repositories */,
+				DC1476522BFFB15400FEA330 /* Firebase */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		DC1476402BFFAE3500FEA330 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				DC14765D2C0101BF00FEA330 /* Repositories */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		DC1476412BFFAE3F00FEA330 /* UseCases */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476542C00FE7200FEA330 /* FetchSubjectsUseCase.swift */,
+				DC1476562C00FE8600FEA330 /* FetchQuestionsUseCase.swift */,
+				DC1476582C00FE9900FEA330 /* FetchRandomQuestionUseCase.swift */,
+			);
+			path = UseCases;
+			sourceTree = "<group>";
+		};
+		DC1476422BFFAE4500FEA330 /* Entities */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0BC2BF5160B0089EF2C /* Subject.swift */,
+				DCBFD0C02BF51C790089EF2C /* Question.swift */,
+			);
+			path = Entities;
+			sourceTree = "<group>";
+		};
+		DC1476432BFFAE4D00FEA330 /* Subject */ = {
+			isa = PBXGroup;
+			children = (
+				DC14764E2BFFB07500FEA330 /* SubjectList */,
+			);
+			path = Subject;
+			sourceTree = "<group>";
+		};
+		DC1476442BFFAE5A00FEA330 /* QuestionList */ = {
+			isa = PBXGroup;
+			children = (
+				DC14764A2BFFAEB500FEA330 /* ViewModel */,
+				DC1476492BFFAEB000FEA330 /* View */,
+			);
+			path = QuestionList;
+			sourceTree = "<group>";
+		};
+		DC1476452BFFAE6000FEA330 /* QuestionDetail */ = {
+			isa = PBXGroup;
+			children = (
+				DC14764B2BFFAEBB00FEA330 /* View */,
+			);
+			path = QuestionDetail;
+			sourceTree = "<group>";
+		};
+		DC1476462BFFAE7300FEA330 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0A92BF4FD590089EF2C /* SubjectView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC1476472BFFAE7700FEA330 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC14766A2C01035400FEA330 /* SubjectListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC1476482BFFAE8200FEA330 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476642C0102C100FEA330 /* DefaultSubjectsRepository.swift */,
+				DC1476662C0102D900FEA330 /* DefaultQuestionsRepository.swift */,
+				DC1476682C0102F100FEA330 /* DefaultRandomQuestionRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DC1476492BFFAEB000FEA330 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0C82BF8E77D0089EF2C /* QuestionListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC14764A2BFFAEB500FEA330 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC14766C2C01036500FEA330 /* QuestionListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC14764B2BFFAEBB00FEA330 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0CA2BF8F6690089EF2C /* QuestionDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC14764D2BFFAF6F00FEA330 /* Question */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476442BFFAE5A00FEA330 /* QuestionList */,
+				DC1476452BFFAE6000FEA330 /* QuestionDetail */,
+				DC14764F2BFFB07D00FEA330 /* RandomQuestion */,
+			);
+			path = Question;
+			sourceTree = "<group>";
+		};
+		DC14764E2BFFB07500FEA330 /* SubjectList */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476472BFFAE7700FEA330 /* ViewModel */,
+				DC1476462BFFAE7300FEA330 /* View */,
+			);
+			path = SubjectList;
+			sourceTree = "<group>";
+		};
+		DC14764F2BFFB07D00FEA330 /* RandomQuestion */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476512BFFB0A400FEA330 /* ViewModel */,
+				DC1476502BFFB09B00FEA330 /* View */,
+			);
+			path = RandomQuestion;
+			sourceTree = "<group>";
+		};
+		DC1476502BFFB09B00FEA330 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476702C013F7500FEA330 /* RandomQuestionView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC1476512BFFB0A400FEA330 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476722C013F8600FEA330 /* RandomQuestionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		DC1476522BFFB15400FEA330 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0BE2BF5176A0089EF2C /* FirebaseDataSource.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		DC14765D2C0101BF00FEA330 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				DC14765E2C01021000FEA330 /* SubjectsRepository.swift */,
+				DC1476602C01021C00FEA330 /* QuestionsRepository.swift */,
+				DC1476622C01022C00FEA330 /* RandomQuestionRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		DCBFD09B2BF4FD590089EF2C = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0A62BF4FD590089EF2C /* Openbook */,
+				DCBFD0A52BF4FD590089EF2C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		DCBFD0A52BF4FD590089EF2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0A42BF4FD590089EF2C /* Openbook.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DCBFD0A62BF4FD590089EF2C /* Openbook */ = {
+			isa = PBXGroup;
+			children = (
+				DC14763D2BFFACBC00FEA330 /* Domain */,
+				DC14763E2BFFACC800FEA330 /* Presentation */,
+				DC14763F2BFFACD700FEA330 /* Data */,
+				DC14763C2BFFACA300FEA330 /* Application */,
+				DCBFD0CE2BFD00700089EF2C /* Resource */,
+				DCBFD0AD2BF4FD5B0089EF2C /* Preview Content */,
+			);
+			path = Openbook;
+			sourceTree = "<group>";
+		};
+		DCBFD0AD2BF4FD5B0089EF2C /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0AE2BF4FD5B0089EF2C /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		DCBFD0CE2BFD00700089EF2C /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				DCBFD0AB2BF4FD5B0089EF2C /* Assets.xcassets */,
+				DCBFD0C62BF644BE0089EF2C /* GoogleService-Info.plist */,
+				DC1476742C03CE6A00FEA330 /* Launch Screen.storyboard */,
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DCBFD0A32BF4FD590089EF2C /* Openbook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DCBFD0B22BF4FD5B0089EF2C /* Build configuration list for PBXNativeTarget "Openbook" */;
+			buildPhases = (
+				DCBFD0A02BF4FD590089EF2C /* Sources */,
+				DCBFD0A12BF4FD590089EF2C /* Frameworks */,
+				DCBFD0A22BF4FD590089EF2C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Openbook;
+			packageProductDependencies = (
+				DCBFD0B82BF4FFCC0089EF2C /* FirebaseFirestore */,
+				DCBFD0BA2BF4FFCC0089EF2C /* FirebaseFirestoreSwift */,
+			);
+			productName = Openbook;
+			productReference = DCBFD0A42BF4FD590089EF2C /* Openbook.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DCBFD09C2BF4FD590089EF2C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					DCBFD0A32BF4FD590089EF2C = {
+						CreatedOnToolsVersion = 15.0;
+					};
+				};
+			};
+			buildConfigurationList = DCBFD09F2BF4FD590089EF2C /* Build configuration list for PBXProject "Openbook" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DCBFD09B2BF4FD590089EF2C;
+			packageReferences = (
+				DCBFD0B72BF4FFCC0089EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+			);
+			productRefGroup = DCBFD0A52BF4FD590089EF2C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DCBFD0A32BF4FD590089EF2C /* Openbook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DCBFD0A22BF4FD590089EF2C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCBFD0AF2BF4FD5B0089EF2C /* Preview Assets.xcassets in Resources */,
+				DCBFD0AC2BF4FD5B0089EF2C /* Assets.xcassets in Resources */,
+				DC1476752C03CE6A00FEA330 /* Launch Screen.storyboard in Resources */,
+				DCBFD0C72BF644BE0089EF2C /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DCBFD0A02BF4FD590089EF2C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1476632C01022C00FEA330 /* RandomQuestionRepository.swift in Sources */,
+				DC1476712C013F7500FEA330 /* RandomQuestionView.swift in Sources */,
+				DCBFD0C12BF51C790089EF2C /* Question.swift in Sources */,
+				DCBFD0AA2BF4FD590089EF2C /* SubjectView.swift in Sources */,
+				DCBFD0C92BF8E77D0089EF2C /* QuestionListView.swift in Sources */,
+				DC1476692C0102F100FEA330 /* DefaultRandomQuestionRepository.swift in Sources */,
+				DC1476612C01021C00FEA330 /* QuestionsRepository.swift in Sources */,
+				DCBFD0BF2BF5176A0089EF2C /* FirebaseDataSource.swift in Sources */,
+				DC1476672C0102D900FEA330 /* DefaultQuestionsRepository.swift in Sources */,
+				DCBFD0CB2BF8F6690089EF2C /* QuestionDetailView.swift in Sources */,
+				DC1476652C0102C100FEA330 /* DefaultSubjectsRepository.swift in Sources */,
+				DCBFD0BD2BF5160B0089EF2C /* Subject.swift in Sources */,
+				DCBFD0A82BF4FD590089EF2C /* OpenbookApp.swift in Sources */,
+				DC1476732C013F8600FEA330 /* RandomQuestionViewModel.swift in Sources */,
+				DC14766D2C01036500FEA330 /* QuestionListViewModel.swift in Sources */,
+				DC14766B2C01035400FEA330 /* SubjectListViewModel.swift in Sources */,
+				DC1476572C00FE8600FEA330 /* FetchQuestionsUseCase.swift in Sources */,
+				DC1476592C00FE9900FEA330 /* FetchRandomQuestionUseCase.swift in Sources */,
+				DC14765F2C01021000FEA330 /* SubjectsRepository.swift in Sources */,
+				DC1476552C00FE7200FEA330 /* FetchSubjectsUseCase.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		DCBFD0B02BF4FD5B0089EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DCBFD0B12BF4FD5B0089EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DCBFD0B32BF4FD5B0089EF2C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Openbook/Preview Content\"";
+				DEVELOPMENT_TEAM = AC7A2PC3D6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunjikim.Openbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DCBFD0B42BF4FD5B0089EF2C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Openbook/Preview Content\"";
+				DEVELOPMENT_TEAM = AC7A2PC3D6;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunjikim.Openbook;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DCBFD09F2BF4FD590089EF2C /* Build configuration list for PBXProject "Openbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBFD0B02BF4FD5B0089EF2C /* Debug */,
+				DCBFD0B12BF4FD5B0089EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DCBFD0B22BF4FD5B0089EF2C /* Build configuration list for PBXNativeTarget "Openbook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DCBFD0B32BF4FD5B0089EF2C /* Debug */,
+				DCBFD0B42BF4FD5B0089EF2C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		DCBFD0B72BF4FFCC0089EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 10.26.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		DCBFD0B82BF4FFCC0089EF2C /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCBFD0B72BF4FFCC0089EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		DCBFD0BA2BF4FFCC0089EF2C /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCBFD0B72BF4FFCC0089EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = DCBFD09C2BF4FD590089EF2C /* Project object */;
+}
