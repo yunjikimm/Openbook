@@ -18,7 +18,7 @@
 <br/>
 
 ## 아키텍처
-<img src="https://github.com/yunjikimm/Openbook/assets/68881093/c2e1b426-80e9-4658-9fac-97487f600bde"><br/>
+<img src="https://github.com/yunjikimm/Openbook/assets/68881093/2a3ced98-5381-4db7-9818-2bfdec79c682"><br/>
 
 - MVVM + Clean Architecture
     - UI를 담당하는 View와 UI를 위한 로직 처리를 담당하는 ViewModel 구분
