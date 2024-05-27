@@ -18,9 +18,11 @@
 <br/>
 
 ## 아키텍처
-MVVM + Clean Architecture
-<br/>
-<img src="https://github.com/yunjikimm/Openbook/assets/68881093/da3256e8-f90a-4f41-abfc-79616e9816c2">
+<img src="https://github.com/yunjikimm/Openbook/assets/68881093/c2e1b426-80e9-4658-9fac-97487f600bde"><br/>
+
+- MVVM + Clean Architecture
+    - UI를 담당하는 View와 UI를 위한 로직 처리를 담당하는 ViewModel 구분
+    - 도메인 비즈니스 규칙에 집중하기 위해 클린 아키텍처 도입
 
 <br/>
 
@@ -31,6 +33,6 @@ MVVM + Clean Architecture
 | <img src="https://github.com/yunjikimm/Openbook/assets/68881093/352c7db3-b3d3-4d46-9e8e-249fa097d429" width="200"> |
 
 
-|`카테고리`|`질문 디테일`|
+|`카테고리`|`질문 디테일`|
 |:----:|:----:|
 | <img src="https://github.com/yunjikimm/Openbook/assets/68881093/dc1a5ce0-bf43-4ab7-927f-5dd7437c173d" width="200"> | <img src="https://github.com/yunjikimm/Openbook/assets/68881093/7081ea88-619a-4b9e-9852-9b5fa3a059d0" width="200"> |
