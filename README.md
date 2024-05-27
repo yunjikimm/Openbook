@@ -19,6 +19,8 @@
 
 ## 아키텍처
 MVVM + Clean Architecture
+<br/>
+<img src="https://github.com/yunjikimm/Openbook/assets/68881093/da3256e8-f90a-4f41-abfc-79616e9816c2">
 
 <br/>
 
