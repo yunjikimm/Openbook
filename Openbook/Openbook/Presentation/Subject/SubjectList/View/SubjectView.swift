@@ -49,10 +49,8 @@ struct SubjectView: View {
                 .padding([.horizontal], 16)
                 .toolbar {
                     ToolbarItem(placement: .topBarLeading) {
-                        Image("OpenbookLogo")
-                            .resizable()
-                            .scaledToFit()
-                            .frame(width: 85)
+                        Text("OPENBOOK")
+                            .font(.system(size: 30, weight: .bold, design: .rounded))
                     }
                 }
             }

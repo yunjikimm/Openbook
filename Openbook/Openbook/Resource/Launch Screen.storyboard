@@ -24,10 +24,10 @@
                         <viewLayoutGuide key="safeArea" id="Bcu-3y-fUS"/>
                         <color key="backgroundColor" name="mainColor"/>
                         <constraints>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="z8r-gX-Hlq" secondAttribute="bottom" constant="303" id="PhQ-ZP-OLB"/>
-                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="z8r-gX-Hlq" secondAttribute="trailing" constant="77" id="WOv-gb-hSS"/>
-                            <constraint firstItem="z8r-gX-Hlq" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="278" id="ZzO-Vn-sP9"/>
-                            <constraint firstItem="z8r-gX-Hlq" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="76" id="vnv-hU-1vr"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="trailing" secondItem="z8r-gX-Hlq" secondAttribute="trailing" constant="77" id="D6L-tA-N0a"/>
+                            <constraint firstItem="z8r-gX-Hlq" firstAttribute="leading" secondItem="Bcu-3y-fUS" secondAttribute="leading" constant="76" id="NBL-BT-uSP"/>
+                            <constraint firstItem="z8r-gX-Hlq" firstAttribute="top" secondItem="Bcu-3y-fUS" secondAttribute="top" constant="278" id="pgu-Bd-ttp"/>
+                            <constraint firstItem="Bcu-3y-fUS" firstAttribute="bottom" secondItem="z8r-gX-Hlq" secondAttribute="bottom" constant="303" id="tCL-Tf-3cp"/>
                         </constraints>
                     </view>
                 </viewController>
