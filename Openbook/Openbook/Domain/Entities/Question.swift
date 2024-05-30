@@ -6,7 +6,7 @@
 //
 
 import Foundation
-import FirebaseFirestoreSwift
+import FirebaseFirestore
 
 struct Question: Decodable, Hashable {
     @DocumentID var id: String?

@@ -21,6 +21,21 @@
 		DC1476712C013F7500FEA330 /* RandomQuestionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476702C013F7500FEA330 /* RandomQuestionView.swift */; };
 		DC1476732C013F8600FEA330 /* RandomQuestionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476722C013F8600FEA330 /* RandomQuestionViewModel.swift */; };
 		DC1476752C03CE6A00FEA330 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DC1476742C03CE6A00FEA330 /* Launch Screen.storyboard */; };
+		DC14767D2C07FDBE00FEA330 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC14767C2C07FDBE00FEA330 /* WidgetKit.framework */; };
+		DC14767F2C07FDBE00FEA330 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DC14767E2C07FDBE00FEA330 /* SwiftUI.framework */; };
+		DC1476822C07FDBE00FEA330 /* OpenbookWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476812C07FDBE00FEA330 /* OpenbookWidgetBundle.swift */; };
+		DC1476842C07FDBE00FEA330 /* OpenbookWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476832C07FDBE00FEA330 /* OpenbookWidget.swift */; };
+		DC1476862C07FDBE00FEA330 /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476852C07FDBE00FEA330 /* AppIntent.swift */; };
+		DC1476882C07FDC000FEA330 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DC1476872C07FDC000FEA330 /* Assets.xcassets */; };
+		DC14768C2C07FDC000FEA330 /* OpenbookWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DC14767A2C07FDBE00FEA330 /* OpenbookWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DC1476942C080B0E00FEA330 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = DC1476932C080B0E00FEA330 /* FirebaseFirestore */; };
+		DC1476972C0817B000FEA330 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0C02BF51C790089EF2C /* Question.swift */; };
+		DC1476982C0817B500FEA330 /* FirebaseDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0BE2BF5176A0089EF2C /* FirebaseDataSource.swift */; };
+		DC1476992C0819C700FEA330 /* Subject.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0BC2BF5160B0089EF2C /* Subject.swift */; };
+		DC1476A12C08304F00FEA330 /* DefaultRandomQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476682C0102F100FEA330 /* DefaultRandomQuestionRepository.swift */; };
+		DC1476A22C08305900FEA330 /* RandomQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476622C01022C00FEA330 /* RandomQuestionRepository.swift */; };
+		DC1476A32C08305C00FEA330 /* FetchRandomQuestionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476582C00FE9900FEA330 /* FetchRandomQuestionUseCase.swift */; };
+		DC1476A42C08370200FEA330 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCBFD0C62BF644BE0089EF2C /* GoogleService-Info.plist */; };
 		DCBFD0A82BF4FD590089EF2C /* OpenbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0A72BF4FD590089EF2C /* OpenbookApp.swift */; };
 		DCBFD0AA2BF4FD590089EF2C /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0A92BF4FD590089EF2C /* SubjectView.swift */; };
 		DCBFD0AC2BF4FD5B0089EF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBFD0AB2BF4FD5B0089EF2C /* Assets.xcassets */; };
@@ -34,6 +49,30 @@
 		DCBFD0C92BF8E77D0089EF2C /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0C82BF8E77D0089EF2C /* QuestionListView.swift */; };
 		DCBFD0CB2BF8F6690089EF2C /* QuestionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0CA2BF8F6690089EF2C /* QuestionDetailView.swift */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DC14768A2C07FDC000FEA330 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DCBFD09C2BF4FD590089EF2C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DC1476792C07FDBE00FEA330;
+			remoteInfo = OpenbookWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DC14768D2C07FDC000FEA330 /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DC14768C2C07FDC000FEA330 /* OpenbookWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		DC1476542C00FE7200FEA330 /* FetchSubjectsUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchSubjectsUseCase.swift; sourceTree = "<group>"; };
@@ -50,6 +89,14 @@
 		DC1476702C013F7500FEA330 /* RandomQuestionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionView.swift; sourceTree = "<group>"; };
 		DC1476722C013F8600FEA330 /* RandomQuestionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomQuestionViewModel.swift; sourceTree = "<group>"; };
 		DC1476742C03CE6A00FEA330 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		DC14767A2C07FDBE00FEA330 /* OpenbookWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = OpenbookWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC14767C2C07FDBE00FEA330 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DC14767E2C07FDBE00FEA330 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DC1476812C07FDBE00FEA330 /* OpenbookWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenbookWidgetBundle.swift; sourceTree = "<group>"; };
+		DC1476832C07FDBE00FEA330 /* OpenbookWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenbookWidget.swift; sourceTree = "<group>"; };
+		DC1476852C07FDBE00FEA330 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
+		DC1476872C07FDC000FEA330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DC1476892C07FDC000FEA330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCBFD0A42BF4FD590089EF2C /* Openbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Openbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBFD0A72BF4FD590089EF2C /* OpenbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenbookApp.swift; sourceTree = "<group>"; };
 		DCBFD0A92BF4FD590089EF2C /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
@@ -64,6 +111,16 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		DC1476772C07FDBE00FEA330 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC14767F2C07FDBE00FEA330 /* SwiftUI.framework in Frameworks */,
+				DC14767D2C07FDBE00FEA330 /* WidgetKit.framework in Frameworks */,
+				DC1476942C080B0E00FEA330 /* FirebaseFirestore in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCBFD0A12BF4FD590089EF2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -276,10 +333,33 @@
 			path = Repositories;
 			sourceTree = "<group>";
 		};
+		DC14767B2C07FDBE00FEA330 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DC14767C2C07FDBE00FEA330 /* WidgetKit.framework */,
+				DC14767E2C07FDBE00FEA330 /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		DC1476802C07FDBE00FEA330 /* OpenbookWidget */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476812C07FDBE00FEA330 /* OpenbookWidgetBundle.swift */,
+				DC1476832C07FDBE00FEA330 /* OpenbookWidget.swift */,
+				DC1476852C07FDBE00FEA330 /* AppIntent.swift */,
+				DC1476872C07FDC000FEA330 /* Assets.xcassets */,
+				DC1476892C07FDC000FEA330 /* Info.plist */,
+			);
+			path = OpenbookWidget;
+			sourceTree = "<group>";
+		};
 		DCBFD09B2BF4FD590089EF2C = {
 			isa = PBXGroup;
 			children = (
 				DCBFD0A62BF4FD590089EF2C /* Openbook */,
+				DC1476802C07FDBE00FEA330 /* OpenbookWidget */,
+				DC14767B2C07FDBE00FEA330 /* Frameworks */,
 				DCBFD0A52BF4FD590089EF2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -288,6 +368,7 @@
 			isa = PBXGroup;
 			children = (
 				DCBFD0A42BF4FD590089EF2C /* Openbook.app */,
+				DC14767A2C07FDBE00FEA330 /* OpenbookWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -326,6 +407,26 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DC1476792C07FDBE00FEA330 /* OpenbookWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DC1476902C07FDC000FEA330 /* Build configuration list for PBXNativeTarget "OpenbookWidgetExtension" */;
+			buildPhases = (
+				DC1476762C07FDBE00FEA330 /* Sources */,
+				DC1476772C07FDBE00FEA330 /* Frameworks */,
+				DC1476782C07FDBE00FEA330 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = OpenbookWidgetExtension;
+			packageProductDependencies = (
+				DC1476932C080B0E00FEA330 /* FirebaseFirestore */,
+			);
+			productName = OpenbookWidgetExtension;
+			productReference = DC14767A2C07FDBE00FEA330 /* OpenbookWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DCBFD0A32BF4FD590089EF2C /* Openbook */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DCBFD0B22BF4FD5B0089EF2C /* Build configuration list for PBXNativeTarget "Openbook" */;
@@ -333,10 +434,12 @@
 				DCBFD0A02BF4FD590089EF2C /* Sources */,
 				DCBFD0A12BF4FD590089EF2C /* Frameworks */,
 				DCBFD0A22BF4FD590089EF2C /* Resources */,
+				DC14768D2C07FDC000FEA330 /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DC14768B2C07FDC000FEA330 /* PBXTargetDependency */,
 			);
 			name = Openbook;
 			packageProductDependencies = (
@@ -357,6 +460,9 @@
 				LastSwiftUpdateCheck = 1500;
 				LastUpgradeCheck = 1500;
 				TargetAttributes = {
+					DC1476792C07FDBE00FEA330 = {
+						CreatedOnToolsVersion = 15.0;
+					};
 					DCBFD0A32BF4FD590089EF2C = {
 						CreatedOnToolsVersion = 15.0;
 					};
@@ -379,11 +485,21 @@
 			projectRoot = "";
 			targets = (
 				DCBFD0A32BF4FD590089EF2C /* Openbook */,
+				DC1476792C07FDBE00FEA330 /* OpenbookWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DC1476782C07FDBE00FEA330 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1476882C07FDC000FEA330 /* Assets.xcassets in Resources */,
+				DC1476A42C08370200FEA330 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCBFD0A22BF4FD590089EF2C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -398,6 +514,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DC1476762C07FDBE00FEA330 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DC1476842C07FDBE00FEA330 /* OpenbookWidget.swift in Sources */,
+				DC1476972C0817B000FEA330 /* Question.swift in Sources */,
+				DC1476A32C08305C00FEA330 /* FetchRandomQuestionUseCase.swift in Sources */,
+				DC1476A22C08305900FEA330 /* RandomQuestionRepository.swift in Sources */,
+				DC1476822C07FDBE00FEA330 /* OpenbookWidgetBundle.swift in Sources */,
+				DC1476982C0817B500FEA330 /* FirebaseDataSource.swift in Sources */,
+				DC1476A12C08304F00FEA330 /* DefaultRandomQuestionRepository.swift in Sources */,
+				DC1476992C0819C700FEA330 /* Subject.swift in Sources */,
+				DC1476862C07FDBE00FEA330 /* AppIntent.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DCBFD0A02BF4FD590089EF2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -427,7 +559,77 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DC14768B2C07FDC000FEA330 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DC1476792C07FDBE00FEA330 /* OpenbookWidgetExtension */;
+			targetProxy = DC14768A2C07FDC000FEA330 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DC14768E2C07FDC000FEA330 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC7A2PC3D6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenbookWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OpenbookWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunjikim.Openbook.OpenbookWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		DC14768F2C07FDC000FEA330 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = AC7A2PC3D6;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = OpenbookWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = OpenbookWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.yunjikim.Openbook.OpenbookWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
 		DCBFD0B02BF4FD5B0089EF2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -550,6 +752,7 @@
 		DCBFD0B32BF4FD5B0089EF2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -584,6 +787,7 @@
 		DCBFD0B42BF4FD5B0089EF2C /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
@@ -618,6 +822,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DC1476902C07FDC000FEA330 /* Build configuration list for PBXNativeTarget "OpenbookWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DC14768E2C07FDC000FEA330 /* Debug */,
+				DC14768F2C07FDC000FEA330 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DCBFD09F2BF4FD590089EF2C /* Build configuration list for PBXProject "Openbook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -650,6 +863,11 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		DC1476932C080B0E00FEA330 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = DCBFD0B72BF4FFCC0089EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
 		DCBFD0B82BF4FFCC0089EF2C /* FirebaseFirestore */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = DCBFD0B72BF4FFCC0089EF2C /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
