@@ -22,6 +22,7 @@ struct QuestionListView: View {
                     Text(question.question)
                     Spacer()
                     Image(systemName: "chevron.right")
+                        .foregroundStyle(.gray)
                 }
                 .onTapGesture {
                     sheetQuestion = question
@@ -29,8 +30,10 @@ struct QuestionListView: View {
                 }
             }
         }
+        .listStyle(.plain)
         .navigationTitle(subject.subject)
         .navigationBarTitleDisplayMode(.large)
+        .toolbar(.hidden, for: .tabBar)
         .fullScreenCover(isPresented: $isShowingSheet) {
             QuestionDetailView(question: $sheetQuestion)
         }

@@ -36,6 +36,7 @@
 		DC1476A22C08305900FEA330 /* RandomQuestionRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476622C01022C00FEA330 /* RandomQuestionRepository.swift */; };
 		DC1476A32C08305C00FEA330 /* FetchRandomQuestionUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476582C00FE9900FEA330 /* FetchRandomQuestionUseCase.swift */; };
 		DC1476A42C08370200FEA330 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = DCBFD0C62BF644BE0089EF2C /* GoogleService-Info.plist */; };
+		DC1476CB2C090BFF00FEA330 /* TabbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC1476CA2C090BFF00FEA330 /* TabbarView.swift */; };
 		DCBFD0A82BF4FD590089EF2C /* OpenbookApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0A72BF4FD590089EF2C /* OpenbookApp.swift */; };
 		DCBFD0AA2BF4FD590089EF2C /* SubjectView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCBFD0A92BF4FD590089EF2C /* SubjectView.swift */; };
 		DCBFD0AC2BF4FD5B0089EF2C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCBFD0AB2BF4FD5B0089EF2C /* Assets.xcassets */; };
@@ -97,6 +98,7 @@
 		DC1476852C07FDBE00FEA330 /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
 		DC1476872C07FDC000FEA330 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DC1476892C07FDC000FEA330 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DC1476CA2C090BFF00FEA330 /* TabbarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabbarView.swift; sourceTree = "<group>"; };
 		DCBFD0A42BF4FD590089EF2C /* Openbook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Openbook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DCBFD0A72BF4FD590089EF2C /* OpenbookApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenbookApp.swift; sourceTree = "<group>"; };
 		DCBFD0A92BF4FD590089EF2C /* SubjectView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubjectView.swift; sourceTree = "<group>"; };
@@ -156,6 +158,7 @@
 			children = (
 				DC1476432BFFAE4D00FEA330 /* Subject */,
 				DC14764D2BFFAF6F00FEA330 /* Question */,
+				DC1476CC2C0924B800FEA330 /* Tab */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -354,6 +357,30 @@
 			path = OpenbookWidget;
 			sourceTree = "<group>";
 		};
+		DC1476CC2C0924B800FEA330 /* Tab */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476CE2C09250800FEA330 /* Tabbar */,
+			);
+			path = Tab;
+			sourceTree = "<group>";
+		};
+		DC1476CD2C0924E200FEA330 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476CA2C090BFF00FEA330 /* TabbarView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		DC1476CE2C09250800FEA330 /* Tabbar */ = {
+			isa = PBXGroup;
+			children = (
+				DC1476CD2C0924E200FEA330 /* View */,
+			);
+			path = Tabbar;
+			sourceTree = "<group>";
+		};
 		DCBFD09B2BF4FD590089EF2C = {
 			isa = PBXGroup;
 			children = (
@@ -549,6 +576,7 @@
 				DCBFD0A82BF4FD590089EF2C /* OpenbookApp.swift in Sources */,
 				DC1476732C013F8600FEA330 /* RandomQuestionViewModel.swift in Sources */,
 				DC14766D2C01036500FEA330 /* QuestionListViewModel.swift in Sources */,
+				DC1476CB2C090BFF00FEA330 /* TabbarView.swift in Sources */,
 				DC14766B2C01035400FEA330 /* SubjectListViewModel.swift in Sources */,
 				DC1476572C00FE8600FEA330 /* FetchQuestionsUseCase.swift in Sources */,
 				DC1476592C00FE9900FEA330 /* FetchRandomQuestionUseCase.swift in Sources */,
@@ -767,7 +795,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -802,7 +830,7 @@
 				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

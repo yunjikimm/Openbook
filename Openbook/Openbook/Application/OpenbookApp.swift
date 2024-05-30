@@ -23,7 +23,7 @@ struct OpenbookApp: App {
     
     var body: some Scene {
         WindowGroup {
-            SubjectView(viewModel: SubjectListViewModel())
+            TabbarView()
         }
     }
 }

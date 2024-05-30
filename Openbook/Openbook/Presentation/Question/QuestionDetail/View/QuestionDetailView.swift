@@ -12,7 +12,7 @@ struct QuestionDetailView: View {
     @Binding var question: Question
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color(uiColor: UIColor.secondarySystemBackground)
                     .ignoresSafeArea(edges: .all)
@@ -20,7 +20,7 @@ struct QuestionDetailView: View {
                 ScrollView(.vertical) {
                     VStack(alignment: .leading) {
                         Text(question.question)
-                            .font(.system(size: 16, weight: .semibold))
+                            .font(.headline)
                             .padding(.vertical)
                         
                         VStack {

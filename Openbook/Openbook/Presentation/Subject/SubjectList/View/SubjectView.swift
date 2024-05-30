@@ -13,19 +13,13 @@ struct SubjectView: View {
     private let columns = [GridItem(.flexible()), GridItem(.flexible())]
     
     var body: some View {
-        NavigationView {
+        NavigationStack {
             ZStack {
                 Color(uiColor: UIColor.secondarySystemBackground)
                     .ignoresSafeArea(edges: .all)
                 
                 ScrollView(.vertical, showsIndicators: false) {
                     VStack(alignment: .leading) {
-                        RandomQuestionView(randomQuestionViewModel: RandomQuestionViewModel())
-                        
-                        Text("카테고리")
-                            .padding(.top, 25)
-                            .font(.system(size: 16, weight: .bold))
-                        
                         LazyVGrid(columns: columns) {
                             ForEach(viewModel.subjects, id: \.self.id) { subject in
                                 NavigationLink {
@@ -46,12 +40,12 @@ struct SubjectView: View {
                         Spacer()
                     }
                 }
-                .padding([.horizontal], 16)
-                .toolbar {
-                    ToolbarItem(placement: .topBarLeading) {
-                        Text("OPENBOOK")
-                            .font(.system(size: 30, weight: .bold, design: .rounded))
-                    }
+                .padding([.horizontal, .top])
+            }
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Text("학습")
+                        .font(.system(size: 30, weight: .bold, design: .rounded))
                 }
             }
         }
