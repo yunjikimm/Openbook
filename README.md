@@ -1,5 +1,5 @@
 ## Openbook
-개발자 기술 면접 준비를 위한 오픈북 iOS 앱
+IT 개발자 기술 면접 준비를 위한 오픈북 iOS 앱
 
 - 팀원
     - 1인 개발
@@ -10,9 +10,10 @@
 ## 개발 환경 및 기술
 - 개발 환경
     - Swift 5, xcode 15.0
-    - 라이트모드 지원(다크모드 미지원), 가로모드 미지원
+    - 라이트모드 지원 (다크모드, 가로모드 미지원)
 - Deployment Target
     - iOS 15.0
+    - Widget 17.0
 - 라이브러리
     - Firebase
 <br/>
@@ -27,12 +28,13 @@
 <br/>
 
 ## 주요 화면 및 기능
-질문을 랜덤으로 보거나, 카테고리 별로 볼 수 있습니다.
-|`홈`|
+- 질문을 랜덤으로 보거나, 카테고리 별로 볼 수 있습니다.
+- 위젯을 통해 랜덤 질문을 볼 수 있습니다.
+
+|`홈`|`카테고리`|`디테일`|
+|:----:|:----:|:----:|
+| <img src="https://github.com/yunjikimm/Openbook/assets/68881093/998f161c-211f-49b7-a935-d1f2f5fc90ee" width="200"> | <img src="https://github.com/yunjikimm/Openbook/assets/68881093/a786a4fc-5e7a-4bc3-bb81-cf67f53cd811" width="200"> | <img src="https://github.com/yunjikimm/Openbook/assets/68881093/2c5538eb-c29f-4cc9-9970-84b649cc4c07" width="200"> |
+
+|`위젯`|
 |:----:|
-| <img src="https://github.com/yunjikimm/Openbook/assets/68881093/352c7db3-b3d3-4d46-9e8e-249fa097d429" width="200"> |
-
-
-|`카테고리`|`질문 디테일`|
-|:----:|:----:|
-| <img src="https://github.com/yunjikimm/Openbook/assets/68881093/dc1a5ce0-bf43-4ab7-927f-5dd7437c173d" width="200"> | <img src="https://github.com/yunjikimm/Openbook/assets/68881093/7081ea88-619a-4b9e-9852-9b5fa3a059d0" width="200"> |
+| <img src="https://github.com/yunjikimm/Openbook/assets/68881093/6617b166-2708-4f48-a258-80bfc5bf23bb" width="200"> |!
